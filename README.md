@@ -39,3 +39,17 @@ Um CRUD feito em Node.js para receber requisições e manipular um banco de dado
   - 404: NOT FOUND.
 - 5xx são códigos de erro do servidor:
   - 500: INTERNAL SERVER ERROR.
+# Preparando o ambiente
+```shell
+mkdir crud # cria a pasta crud.
+cd crud # entra na pasta crud.
+npm install --global yarn && yarn --version # instala o yarn e exibe a versão instalada.
+yarn init -y # cria o package.json e automaticamente responde sim para todas as perguntas durante a criação.
+code . # abre a pasta crud no vs code.
+```
+- No package.json ficarão armazenadas as referências de todos os pacotes que você instalar via NPM ou Yarn.
+- Abra o terminal pressionando Ctrl + Shift + \` ou Ctrl + J.
+```
+yarn add express
+```
+Crie o arquivo index.js e comece a codar.
