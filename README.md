@@ -39,7 +39,7 @@ Um CRUD feito em Node.js para receber requisições e manipular um banco de dado
   - 404: NOT FOUND.
 - 5xx são códigos de erro do servidor:
   - 500: INTERNAL SERVER ERROR.
-# Preparando o ambiente
+## Preparando o ambiente
 ```shell
 mkdir crud # cria a pasta crud.
 cd crud # entra na pasta crud.
@@ -52,4 +52,22 @@ code . # abre a pasta crud no vs code.
 ```
 yarn add express
 ```
-Crie o arquivo index.js e comece a codar.
+- Crie o arquivo index.js e comece a codar.
+## Extras
+- O parâmetro `req` representa todos os dados da requisição.
+- O parâmetro `res` representa todas as informações necessárias para informar uma resposta para o frontend.
+- Instale o `Insomnia` para testar as requisições e visualizar as respostas e códigos HTTP retornados.
+- `yarn add nodemon -D` instala uma depedência de _**desenvolvimento**_ que reinicia o servidor toda vez que salvamos o script.
+- Adicione no package.json a seguinte chave e valor:
+  ```json
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  ```
+- Para rodar o servidor com o nodemon, execute `yarn dev`.
+### Método e rotas
+- GET http://localhost:3000/customers => Retorna os clientes cadastrados.
+- POST http://localhost:3000/customers => Cria um novo cliente.
+- PUT http://localhost:3000/customers/:index => Atualiza um cliente existente.
+- DELETE http://localhost:3000/customers/:index => Apaga um cliente existente.
+- GET http://localhost:3000/customers/:index => Retorna um cliente específico.
