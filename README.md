@@ -71,3 +71,5 @@ yarn add express
 - PUT http://localhost:3000/customers/:index => Atualiza um cliente existente.
 - DELETE http://localhost:3000/customers/:index => Apaga um cliente existente.
 - GET http://localhost:3000/customers/:index => Retorna um cliente específico.
+## Middlewares
+- São funcões que recebem os parâmetros req, res, entre outros, e executa uma função na aplicação, manipulando os dados da aplicação de alguma forma.
